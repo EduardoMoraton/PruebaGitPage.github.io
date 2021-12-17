@@ -1,0 +1,111 @@
+body *
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    background-color: aqua;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    max-height: 6rem;
+}
+nav
+{
+    position: sticky;   
+}
+.logo-container
+{
+    min-width: 30rem;
+}
+.menu
+{
+    min-width: 30rem;
+}
+/* IMAGEN PRINCIPAL */
+section:nth-child(2)
+{
+    flex-grow: 5;
+    display: flex;
+}
+
+section:nth-child(2) 
+.container
+{ 
+    background: url(../img/placeholder-index.jpg) no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+}
+.busqueda:hover ~ section:nth-child(2) article
+{
+    
+}
+
+section:nth-child(2) 
+article
+div
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busqueda
+{
+    width: 60rem;
+    height: 60px;
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+
+fieldset
+{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset
+input
+{
+    border-radius: 1rem;
+    width: 60%;
+    height: 3rem;
+}
+
+
+section:nth-child(3)
+{
+    background-color: blue;
+    display: flex;
+    flex-grow: 5;
+}
+aside
+{
+    flex-grow: 1;
+    background-color: peru;
+}
+
+article
+{
+    flex-grow: 10;
+}
+
+footer
+{
+    background-color: blueviolet;
+    flex-grow: 1;
+}

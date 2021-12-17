@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="../css/busqueda_css.css" media="all" type="text/css" rel="stylesheet" />
+    <title>King Viajes</title>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html"><img class="icono" src="../img/LogoKingViajes.png" alt="Travel King"></a>
+            <ul class="menu">
+                <li><a href="">Hoteles</a></li>
+                <li><a href="">Experiencias</a></li>
+                <li><a href="">Transporte</a></li>
+                <li><a href="index.html#1">Recomendados</a></li>
+            </ul>
+        </header>
+        <div class="cuerpo">
+            <section>
+                <div class="filtro">
+                    <form>
+                        <input type="date" class="date">
+                        <input type="date" class="date">
+                    </form>
+                    <form >
+                        <ul class="alojamiento-filtro">
+                            <legend>Alojamiento</legend>
+                            <li>
+                                <input type="radio" name="alojamiento" id="hotel" checked>
+                                <label for="hotel">hotel</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="alojamiento" id="apartahotel">
+                                <label for="apartahotel">apartahotel</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="alojamiento" id="apartamento">
+                                <label for="apartamento">apartamento</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="alojamiento" id="casa">
+                                <label for="casa">casa</label>
+                            </li>
+                        </ul>
+                    </form>
+                    <form >
+                        <ul class="alojamiento-filtro">
+                            <legend>Alojamiento</legend>
+                            <li>
+                                <input type="checkbox" name="filtro" id="desayuno incluído" checked>
+                                <label for="desayuno incluído">desayuno incluído</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filtro" id="piscina">
+                                <label for="piscina">piscina</label>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Estrellas</summary>
+                                    <li>
+                                        <input type="checkbox" name="filtro" id="1 estrella">
+                                        <label for="1 estrella">1 estrella</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="filtro" id="2 estrella">
+                                        <label for="2 estrella">2 estrella</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="filtro" id="3 estrella">
+                                        <label for="3 estrella">3 estrella</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="filtro" id="4 estrella">
+                                        <label for="4 estrella">4 estrella</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="filtro" id="5 estrella">
+                                        <label for="5 estrella">5 estrella</label>
+                                    </li>
+                                </details>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filtro" id="cancelacion">
+                                <label for="cancelacion">cancelación gratis</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filtro" id="baño privado">
+                                <label for="baño privado">baño privado gratis</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filtro" id="parking">
+                                <label for="parking">parking</label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="ofertas">
+                    <ul>
+                        <li><h2>Hotel malaga 2 personas</h2><img src="../img/hotel1.jpeg" alt="img1" height="250px"></li>
+                        <li><h2>Hotel valencia 5 estrellas 2 personas</h2></li>
+                        <li><h2>Hotel Madrid 3 estrellas</h2></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            <aside>
+                <div class="anuncios">
+                    <img src="../img/hotel2.jpeg" alt="img" height="175px">
+                    <img src="../img/hotel4.jpeg" alt="img" height="175px">
+                    <img src="../img/hotel3.jpeg" alt="img" height="175px">
+                    <img src="../img/hotel1.jpeg" alt="img" height="175px">
+                </div>
+            </aside>
+        </div>
+        <footer><h3>Copy Right</h3</footer>
+    </main>
+    
+</body>
+</html>

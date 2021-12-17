@@ -1,0 +1,165 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Readex Pro', sans-serif;
+}
+header{
+    padding: 10px;
+    background-color:  #b6b8c3;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main{
+    background-image: url(../img/bg-index.jpg);
+    background-size: cover;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li a{
+    padding: 10px;
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+
+    padding: 6px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.menu li a:hover{
+    color: rgba(206, 131, 20, 0.5);
+}
+.icono{
+    height: 100px;
+    width: 200px;
+}
+.cuerpo{
+    flex-wrap: wrap;
+    display: flex;
+}
+.cuerpo section{
+    padding: 10px;
+    flex: 55%;
+    display: flex;
+    flex-direction: row;
+}
+.cuerpo aside{
+    padding: 10px;
+    margin:5px;
+    background-color: rgba(81, 141, 207, 0.3);
+    border-radius: 10px;
+    flex: 50px;
+    display: flex;
+    justify-content: center;
+}
+.cuerpo aside .anuncios{
+    display: flex;
+    flex-direction: column;
+    
+}
+.anuncios img{
+    margin: 10px;
+    border-radius: 10px;
+}
+aside .anuncios img:hover{
+    
+}
+.ofertas{
+    margin:5px;
+    background-color: rgba(81, 141, 207, 0.3);
+    border-radius: 10px;
+}
+.alojamiento-filtro{
+    border:3px solid rgba(150, 164, 179, 0.3);
+    background-color: rgba(150, 164, 179, 0.3);;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.cuerpo li{
+    padding: 10px;
+    list-style: none;
+}
+.cuerpo label{
+    font-size: 17px;
+    color: #DDDDDD;
+    cursor: pointer;
+}
+.cuerpo label:hover{
+    color: rgba(206, 131, 20, 0.5);
+}
+.filtro{
+    background-color: rgba(81, 141, 207, 0.3);
+    border-radius: 0.4cm;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+.date{
+    margin: 10px;
+}
+legend{
+    color: #353232;
+    font-size: 21px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+form ul{
+    display: flex;
+    padding: 0;
+}
+summary{
+    color: #DDDDDD;
+    cursor:pointer;
+    outline: none;
+}
+
+footer{
+    padding: 10px;
+}
+
+@media (max-width: 700px){
+    header{
+        justify-content: center;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .menu li{
+        margin-top: 10px;
+    }
+    .cuerpo{
+        flex-direction: column; 
+        
+    }
+    .filtro{
+        flex-direction: column;
+        justify-content: center;
+    }
+    form{
+        justify-content: center;
+    }
+    section{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
