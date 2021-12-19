@@ -231,6 +231,7 @@ input::placeholder {
     border-radius: 34px;
     height: 100%;
     width: var(--withContainer);
+    
 }
 
 .slider-item .image-info {
@@ -458,6 +459,7 @@ input::placeholder {
     flex: 1;
     min-height: 20rem;
     display: flex;
+    align-items: center;
     justify-content: center;
     
     /* Filtro para safari */
@@ -599,6 +601,13 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
+    :root {
+        --withContainer: 20rem;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
     header {
         transform: translateY(-85%);
         transition: .4s;
@@ -623,6 +632,37 @@ footer {
         display: block;
     }
 
+    .slider-section {
+        height: 40rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .slider-section .container {
+        height: 30rem;
+    } 
+    .slider {
+        height: 30vh;
+        width: var(--withContainer);
+    }
+
+    .slider-item .image-info {
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        backdrop-filter: blur(20px) saturate(180%);
+        background-color: var(--blackTransparent);
+        border-bottom-left-radius: 34px;
+        border-bottom-right-radius: 34px;
+        border-top-right-radius: 34px;
+        color: var(--white);
+        left: 5%;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        width: 80%;
+        
+        /* Filtro para safari */
+    }
+
     
 
     .formulario-tabla form {
@@ -643,11 +683,4 @@ footer {
         height: 15rem;
         width: 20rem;
     }
-
-    @keyframes drop{
-        to{
-
-        }
-    }
-
 }
