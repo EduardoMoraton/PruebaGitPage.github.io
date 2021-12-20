@@ -283,6 +283,7 @@ h2{
     display: flex;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+    align-items: center;
 }
 .infoExtra ul li .menores{
     font-size: small;

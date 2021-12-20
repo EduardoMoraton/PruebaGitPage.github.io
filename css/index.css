@@ -35,7 +35,8 @@ body * {
 
 main {
     background-attachment: fixed;
-    background-image: url(../img/main-bg.jpg);
+    background-color: var(--whiteTransparent);
+    background-image: url(../img/main-bg.jpg);  
     background-size: cover;
     scroll-behavior: smooth;
 }
@@ -69,6 +70,13 @@ header .container ul {
 
 h2
 {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: var(--withContainer);
+    padding: 1rem;
+    font-size: large;
+    border-radius: 34px;
+    background-color: var(--blackTransparent);
     color: var(--white);
 }
 
@@ -306,6 +314,7 @@ input::placeholder {
 }
 
 .paises-mas-visitados .container {
+    padding-bottom: 1rem;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -586,6 +595,19 @@ footer {
     min-height: 10vh;
 }
 
+.copy {
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 100%;
+    max-height: 100%;
+    display: flex;
+    color: var(--white);
+}
+
+.copy img {
+    height: auto;
+    width: 7rem;
+}
 
 @media only screen and (max-width: 1024px) {
     section {
@@ -650,9 +672,6 @@ footer {
         -webkit-backdrop-filter: blur(20px) saturate(180%);
         backdrop-filter: blur(20px) saturate(180%);
         background-color: var(--blackTransparent);
-        border-bottom-left-radius: 34px;
-        border-bottom-right-radius: 34px;
-        border-top-right-radius: 34px;
         color: var(--white);
         left: 5%;
         padding: 1rem;
@@ -674,6 +693,10 @@ footer {
     }
     .recomendaciones .container {
         flex-direction: column;
+    }
+
+    .formulario-block {
+        min-width: 100%;
     }
     .datalist {
         flex-direction: column;
